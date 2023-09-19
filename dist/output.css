@@ -562,17 +562,14 @@ video {
   z-index: -1;
 }
 
-.order-1 {
-  order: 1;
-}
-
-.order-first {
-  order: -9999;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-2 {
@@ -607,8 +604,12 @@ video {
   height: 100%;
 }
 
-.w-\[120px\] {
-  width: 120px;
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-\[80px\] {
+  width: 80px;
 }
 
 .w-auto {
@@ -617,6 +618,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[110px\] {
+  width: 110px;
 }
 
 .flex-row {
@@ -647,26 +656,18 @@ video {
   border-width: 1px;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
-.border-\[5px\] {
-  border-width: 5px;
-}
-
 .border-t-\[5px\] {
   border-top-width: 5px;
-}
-
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-\[\#232323\] {
   --tw-border-opacity: 1;
   border-color: rgb(35 35 35 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#000000\] {
@@ -729,24 +730,14 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pt-2 {
@@ -759,6 +750,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-3xl {
@@ -815,6 +810,28 @@ video {
   opacity: 0.7;
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:mt-\[200px\] {
+    margin-top: 200px;
+  }
+
+  .max-sm\:flex {
+    display: flex;
+  }
+
+  .max-sm\:h-10 {
+    height: 2.5rem;
+  }
+
+  .max-sm\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .max-sm\:h-\[250px\] {
+    height: 250px;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
@@ -826,8 +843,8 @@ video {
     order: -9999;
   }
 
-  .md\:w-4\/5 {
-    width: 80%;
+  .md\:h-\[600px\] {
+    height: 600px;
   }
 
   .md\:w-\[150px\] {
